@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปเนื้อหาติวสอบปลายภาค (Unit B) ป.2</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Mali:wght@500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelPink: '#FFB6C1',
+                        pastelBlue: '#A0E7E5',
+                        pastelYellow: '#FFE66D',
+                        pastelGreen: '#B4F8C8',
+                        pastelPurple: '#E8AEB7',
+                        cutePeach: '#FFDAC1'
+                    },
+                    fontFamily: {
+                        mali: ['Mali', 'cursive'],
+                        sarabun: ['Sarabun', 'sans-serif'],
+                        fredoka: ['Fredoka', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #F8FAFC;
+            background-image: radial-gradient(#CBD5E1 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+
+        .mali-font { font-family: 'Mali', cursive; }
+        .fredoka-font { font-family: 'Fredoka', sans-serif; }
+        
+        /* Cute Card & Sticker Decor */
+        .cute-card {
+            background: white;
+            border-radius: 20px;
+            border: 2.5px solid #334155;
+            box-shadow: 4px 4px 0px 0px #334155;
+            transition: all 0.2s ease;
+        }
+
+        .cute-card-pink { border-color: #FF6B6B; box-shadow: 4px 4px 0px 0px #FF6B6B; }
+        .cute-card-blue { border-color: #4D96FF; box-shadow: 4px 4px 0px 0px #4D96FF; }
+        .cute-card-yellow { border-color: #FFB800; box-shadow: 4px 4px 0px 0px #FFB800; }
+        .cute-card-purple { border-color: #9B51E0; box-shadow: 4px 4px 0px 0px #9B51E0; }
+
+        /* Washi Tape Decor */
+        .washi-tape {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1.5px dashed #94A3B8;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        /* Print Formatting */
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 6mm;
+            }
+            body {
+                background: white !important;
+                padding: 0 !important;
+                font-size: 9.5pt !important;
+                color: black !important;
+            }
+            .no-print { display: none !important; }
+            .a4-container {
+                max-width: 100% !important;
+                width: 100% !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+            .cute-card {
+                box-shadow: none !important;
+                border-width: 1.5px !important;
+                page-break-inside: avoid;
+                margin-bottom: 10px !important;
+            }
+        }
+    </style>
+</head>
+<body class="p-3 md:p-6 text-gray-800">
+
+    <div class="a4-container max-w-5xl mx-auto space-y-4">
+
+        <!-- Top Action Bar (Hides on Print) -->
+        <div class="no-print bg-white p-3 md:p-4 rounded-2xl border-2 border-slate-700 shadow-[3px_3px_0px_0px_#334155] flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">📘</span>
+                <div>
+                    <h3 class="mali-font font-bold text-gray-800 text-base">สรุปเนื้อหา (Unit B)</h3>
+                    <p class="text-xs text-gray-500">สำหรับอ่านทบทวนติวสอบปลายภาค</p>
+                </div>
+            </div>
+            <button onclick="window.print()" class="mali-font bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-5 rounded-full shadow-md transition transform hover:scale-105 flex items-center gap-2 text-xs md:text-sm border-2 border-slate-800">
+                <span>🖨️</span> พิมพ์ชีทสรุป (Print A4)
+            </button>
+        </div>
+
+        <!-- Header Sheet Banner -->
+        <div class="relative bg-gradient-to-r from-pink-200 via-purple-100 to-sky-200 border-2 border-slate-700 rounded-3xl p-4 md:p-5 text-center shadow-[4px_4px_0px_0px_#334155]">
+            <div class="flex flex-wrap items-center justify-center border-b-2 border-dashed border-slate-400 pb-2 mb-2.5 text-xs mali-font">
+                <span class="bg-white px-3 py-1 rounded-full font-bold text-pink-600 border border-pink-300 shadow-sm">
+                    ✨ สรุปติวสอบ AI
+                </span>
+            </div>
+            <h1 class="mali-font text-2xl md:text-3xl font-extrabold text-pink-600 drop-shadow-sm mb-1">
+                🌸 สรุปเนื้อหาติวสอบปลายภาค (Unit B) 🌸
+            </h1>
+            <p class="mali-font text-xs md:text-sm text-slate-700 font-semibold">
+                วิชา วิทยาการคำนวณและปัญญาประดิษฐ์ (AI) - ชั้นประถมศึกษาปีที่ 2
+            </p>
+
+            <!-- Navigation Quick Badges -->
+            <div class="flex flex-wrap justify-center gap-2 mt-3 text-xs mali-font">
+                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-lg border border-pink-300 font-bold">🎨 ซอฟต์แวร์ & โฟลเดอร์</span>
+                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-lg border border-sky-300 font-bold">💻 ฮาร์ดแวร์ & ดูแลรักษา</span>
+                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-lg border border-amber-300 font-bold">🔒 ความปลอดภัยและการใช้งานเทคโนโลยี</span>
+            </div>
+        </div>
+
+        <!-- CHAPTER 1 -->
+        <div class="cute-card cute-card-pink p-4 md:p-5 relative">
+            <div class="washi-tape"></div>
+            <div class="flex items-center gap-2 border-b-2 border-pink-200 pb-2 mb-3">
+                <span class="text-2xl">🎨</span>
+                <div>
+                    <h2 class="mali-font font-bold text-lg md:text-xl text-pink-600">ซอฟต์แวร์และการจัดการไฟล์เบื้องต้น</h2>
+                    <p class="text-xs text-gray-500">การใช้งานโปรแกรมวาดภาพ โปรแกรมพิมพ์งาน และการจัดเก็บไฟล์ให้เป็นระเบียบ</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <!-- Paint -->
+                <div class="bg-pink-50/80 p-3 rounded-xl border border-pink-200 space-y-2">
+                    <div class="font-bold text-pink-700 mali-font text-sm flex items-center gap-1">
+                        <span>🖌️</span> 1. โปรแกรมกราฟิก Paint
+                    </div>
+                    <p class="text-gray-700"><b>หน้าที่หลัก:</b> ใช้สำหรับ วาดภาพ ระบายสี และตกแต่งรูปภาพ</p>
+                    <div class="bg-white p-2.5 rounded-lg border border-pink-200 space-y-1.5">
+                        <span class="font-bold text-pink-600 block border-b pb-1">เครื่องมือสำคัญที่ออกสอบบ่อย:</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-gray-700">
+                            <div>✏️ <b>ดินสอ (Pencil):</b> วาดเส้นอิสระตามมือลาก</div>
+                            <div>🧹 <b>ยางลบ (Eraser):</b> ลบส่วนที่ไม่ต้องการ หรือส่วนที่วาดผิด</div>
+                            <div>🪣 <b>ถังสี (Fill Color):</b> เติมสีในพื้นที่ว่าง หรือรูปทรงปิด</div>
+                            <div>📐 <b>รูปทรง (Shapes):</b> วาดเส้นตรง, วงกลม, สี่เหลี่ยม, ดาว</div>
+                            <div>🔍 <b>แว่นขยาย (Magnifier):</b> ขยายภาพดูจุดที่วาดไม่ติดกัน</div>
+                            <div>🔤 <b>กล่องข้อความ (Text):</b> พิมพ์ตัวหนังสือลงในรูป</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Word & PowerPoint -->
+                <div class="bg-sky-50/80 p-3 rounded-xl border border-sky-200 space-y-2">
+                    <div class="font-bold text-sky-700 mali-font text-sm flex items-center gap-1">
+                        <span>📄</span> 2. โปรแกรมพิมพ์เอกสาร & นำเสนอ
+                    </div>
+                    <div class="bg-white p-2.5 rounded-lg border border-sky-200">
+                        <span class="font-bold text-blue-600">📘 Microsoft Word (ประมวลคำ)</span>
+                        <p class="text-gray-600 text-xs mt-0.5">เหมาะสำหรับ พิมพ์รายงาน พิมพ์ข้อความ นิทาน ใบงาน</p>
+                        <div class="flex flex-wrap gap-2 mt-1.5 text-xs font-semibold text-gray-700 bg-sky-50 p-1.5 rounded">
+                            <span class="bg-white px-2 py-0.5 border rounded"><b>B (Bold):</b> ตัวหนา</span>
+                            <span class="bg-white px-2 py-0.5 border rounded"><i>I (Italic):</i> ตัวเอียง</span>
+                            <span class="bg-white px-2 py-0.5 border rounded"><u>U (Underline):</u> ขีดเส้นใต้</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-2.5 rounded-lg border border-sky-200">
+                        <span class="font-bold text-amber-600">📊 Microsoft PowerPoint (สไลด์)</span>
+                        <p class="text-gray-600 text-xs mt-0.5">เหมาะสำหรับ ทำสไลด์นำเสนอผลงานหน้าชั้นเรียน มีภาพเคลื่อนไหวสดใส</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Folder Section -->
+            <div class="mt-3 bg-amber-50/90 p-3 rounded-xl border border-amber-300 text-xs md:text-sm">
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-200 pb-1.5 mb-2">
+                    <div class="font-bold text-amber-800 mali-font text-sm flex items-center gap-1">
+                        <span>📁</span> 3. การจัดการโฟลเดอร์ (Folder)
+                    </div>
+                    <span class="bg-amber-200 text-amber-900 px-2.5 py-0.5 rounded-full font-bold text-[11px]">
+                        ⭐ขั้นตอนการสร้างโฟลเดอร์ใหม่ (ต้องจำลำดับ)
+                    </span>
+                </div>
+                <p class="text-gray-700 mb-2"><b>โฟลเดอร์ (Folder):</b> เปรียบเหมือน "แฟ้มเอกสาร" ใช้จัดเก็บไฟล์งานแยกเป็นหมวดหมู่ ป้องกันงานหาย</p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs font-semibold">
+                    <div class="bg-white p-2 rounded-lg border border-amber-300 shadow-sm">
+                        <span class="fredoka-font text-amber-600 text-base font-bold block">1</span>
+                        คลิกขวาบนพื้นที่ว่างบนหน้าจอ (Desktop)
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-amber-300 shadow-sm">
+                        <span class="fredoka-font text-amber-600 text-base font-bold block">2</span>
+                        เลือกเมนู New (สร้าง)
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-amber-300 shadow-sm">
+                        <span class="fredoka-font text-amber-600 text-base font-bold block">3</span>
+                        เลือกคำสั่ง Folder (โฟลเดอร์)
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-amber-300 shadow-sm">
+                        <span class="fredoka-font text-amber-600 text-base font-bold block">4</span>
+                        ตั้งชื่อไฟล์ แล้วกด Rename (เปลี่ยนชื่อ)
+                    </div>
+                </div>
+
+                <div class="mt-2.5 bg-white p-2.5 rounded-lg border border-amber-200 flex flex-wrap justify-between items-center text-xs text-gray-700 gap-2">
+                    <span>💡 <b>คีย์ลัดน่ารู้:</b> กด <mark class="bg-yellow-200 px-1 rounded font-mono font-bold">Ctrl + S</mark> เพื่อบันทึกงาน (Save) / กด <mark class="bg-yellow-200 px-1 rounded font-mono font-bold">Ctrl + Z</mark> เพื่อยกเลิกคำสั่งที่ทำผิด (Undo)</span>
+                    <div class="text-amber-800 font-bold mali-font bg-amber-100 px-2 py-1 rounded border border-amber-300">
+                        🎯 <b>Paint = วาดรูป | Word = พิมพ์งาน | PowerPoint = ทำสไลด์</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAPTER 2 -->
+        <div class="cute-card cute-card-blue p-4 md:p-5 relative">
+            <div class="washi-tape"></div>
+            <div class="flex items-center gap-2 border-b-2 border-sky-200 pb-2 mb-3">
+                <span class="text-2xl">💻</span>
+                <div>
+                    <h2 class="mali-font font-bold text-lg md:text-xl text-sky-600">การดูแลรักษาและการใช้งานอุปกรณ์คอมพิวเตอร์</h2>
+                    <p class="text-xs text-gray-500">รู้จักอุปกรณ์ การเปิด-ปิดเครื่องที่ถูกต้อง และการถนอมสุขภาพสายตา</p>
+                </div>
+            </div>
+
+            <!-- Hardware List -->
+            <div class="mb-3">
+                <span class="mali-font font-bold text-sky-800 text-xs md:text-sm block mb-1.5">🖥️ รู้จัก 6 อุปกรณ์หลักของคอมพิวเตอร์ (Hardware):</span>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 text-xs text-center">
+                    <div class="bg-sky-50 p-2 rounded-xl border border-sky-200">
+                        <span class="text-xl block">🔲</span>
+                        <b class="text-sky-700 block">CPU (เคส)</b>
+                        <span class="text-[10px] text-gray-600">สมองประมวลผลคำสั่ง</span>
+                    </div>
+                    <div class="bg-sky-50 p-2 rounded-xl border border-sky-200">
+                        <span class="text-xl block">🖥️</span>
+                        <b class="text-sky-700 block">Monitor (จอภาพ)</b>
+                        <span class="text-[10px] text-gray-600">แสดงผลภาพและตัวหนังสือ</span>
+                    </div>
+                    <div class="bg-sky-50 p-2 rounded-xl border border-sky-200">
+                        <span class="text-xl block">⌨️</span>
+                        <b class="text-sky-700 block">Keyboard (แป้นพิมพ์)</b>
+                        <span class="text-[10px] text-gray-600">ป้อนข้อมูลตัวอักษร/ตัวเลข</span>
+                    </div>
+                    <div class="bg-sky-50 p-2 rounded-xl border border-sky-200">
+                        <span class="text-xl block">🖱️</span>
+                        <b class="text-sky-700 block">Mouse (เมาส์)</b>
+                        <span class="text-[10px] text-gray-600">ชี้และคลิกเลือกสิ่งต่างๆ</span>
+                    </div>
+                    <div class="bg-sky-50 p-2 rounded-xl border border-sky-200">
+                        <span class="text-xl block">🔊</span>
+                        <b class="text-sky-700 block">Speaker (ลำโพง)</b>
+                        <span class="text-[10px] text-gray-600">ส่งสัญญาณเสียงออกมา</span>
+                    </div>
+                    <div class="bg-sky-50 p-2 rounded-xl border border-sky-200">
+                        <span class="text-xl block">🖨️</span>
+                        <b class="text-sky-700 block">Printer (เครื่องพิมพ์)</b>
+                        <span class="text-[10px] text-gray-600">พิมพ์งานลงกระดาษ</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <!-- Startup & Shutdown -->
+                <div class="bg-emerald-50/80 p-3 rounded-xl border border-emerald-200 space-y-2">
+                    <div class="font-bold text-emerald-800 mali-font text-xs md:text-sm border-b border-emerald-200 pb-1">
+                        🔌 1. เปิด-ปิดเครื่องอย่างถูกวิธี
+                    </div>
+                    <p class="text-xs text-emerald-900 font-semibold"><b>ประโยชน์:</b> ยืดอายุการใช้งาน เครื่องไม่พังง่าย</p>
+                    
+                    <div class="space-y-1.5 text-xs">
+                        <div class="bg-white p-2 rounded-lg border border-emerald-200">
+                            <b class="text-emerald-700 block">🟢 การเปิดเครื่อง (Startup):</b>
+                            <span>เสียบปลั๊ก ➔ กดปุ่ม Power ที่เคส ➔ เปิดสวิตช์จอภาพ</span>
+                        </div>
+                        <div class="bg-white p-2 rounded-lg border border-emerald-200">
+                            <b class="text-rose-600 block">🔴 การปิดเครื่อง (Shutdown):</b>
+                            <span>คลิกปุ่ม Start ➔ เลือก Shut Down ➔ ปิดจอ ➔ ถอดปลั๊ก</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rules -->
+                <div class="bg-purple-50/80 p-3 rounded-xl border border-purple-200 space-y-1.5 text-xs">
+                    <div class="font-bold text-purple-800 mali-font text-xs md:text-sm border-b border-purple-200 pb-1">
+                        🧹 2. กฎการดูแลรักษาคอมพิวเตอร์
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-gray-700">
+                        <div class="bg-white p-2 rounded-lg border border-purple-100 flex items-start gap-1">
+                            <span>🚫</span>
+                            <div><b>ห้ามน้ำและขนมใกล้เครื่อง:</b> หากทำหกใส่จะทำให้เกิดไฟฟ้าลัดวงจร</div>
+                        </div>
+                        <div class="bg-white p-2 rounded-lg border border-purple-100 flex items-start gap-1">
+                            <span>🧹</span>
+                            <div><b>ทำความสะอาดแป้นพิมพ์:</b> ใช้แปรงปัดฝุ่นแห้ง ๆ ปัดออก</div>
+                        </div>
+                        <div class="bg-white p-2 rounded-lg border border-rose-200 text-rose-700 flex items-start gap-1">
+                            <span>❌</span>
+                            <div><b>ข้อห้ามเด็ดขาด:</b> ห้ามใช้ผ้าเปียก หรือ ฉีดน้ำใส่เครื่อง</div>
+                        </div>
+                        <div class="bg-white p-2 rounded-lg border border-purple-100 flex items-start gap-1">
+                            <span>🛡️</span>
+                            <div><b>กันฝุ่น:</b> หลังเลิกใช้และปิดเครื่อง ให้ใช้ผ้า/พลาสติกคลุม</div>
+                        </div>
+                        <div class="bg-white p-2 rounded-lg border border-purple-100 flex items-start gap-1 sm:col-span-2">
+                            <span>🚚</span>
+                            <div><b>ย้ายเครื่อง:</b> ต้องปิดเครื่องและถอดปลั๊กออกก่อนเสมอ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health & Ergonomics -->
+            <div class="mt-3 bg-white p-3 rounded-xl border border-sky-300 text-xs">
+                <div class="font-bold text-sky-800 mali-font text-xs md:text-sm flex items-center gap-1 border-b border-sky-200 pb-1 mb-2">
+                    <span>👀</span> 3. สุขอนามัยและท่านั่งที่ถูกต้อง:
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
+                    <div class="bg-sky-50 p-2.5 rounded-lg border border-sky-200">
+                        <b>🪑 ท่านั่งที่ถูกต้อง:</b> นั่งหลังตรง, สายตาห่างจากจอประมาณ 40-50 เซนติเมตร, เท้าวางกับพื้น
+                    </div>
+                    <div class="bg-rose-50 p-2.5 rounded-lg border border-rose-200 text-rose-800">
+                        <b>⚠️ เล่นนานเกินไป:</b> แสบตา สายตาพร่ามัว ปวดตา ปวดหลัง
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAPTER 3 -->
+        <div class="cute-card cute-card-yellow p-4 md:p-5 relative">
+            <div class="washi-tape"></div>
+            <div class="flex items-center gap-2 border-b-2 border-amber-200 pb-2 mb-3">
+                <span class="text-2xl">🔒</span>
+                <div>
+                    <h2 class="mali-font font-bold text-lg md:text-xl text-amber-600">การใช้งานเทคโนโลยีอย่างปลอดภัย</h2>
+                    <p class="text-xs text-gray-500">การปกป้องข้อมูลส่วนตัว รับมือภัยคุกคาม และรู้จักหุ่นยนต์ปัญญาประดิษฐ์</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs md:text-sm">
+                <!-- Personal Data -->
+                <div class="bg-rose-50/80 p-3 rounded-xl border border-rose-200 space-y-2">
+                    <div class="font-bold text-rose-700 mali-font text-xs md:text-sm flex items-center gap-1 border-b border-rose-200 pb-1">
+                        <span>🆔</span> 1. การปกป้องข้อมูลส่วนตัว
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-rose-200">
+                        <b class="text-rose-600 block text-xs mb-1">❌ ข้อมูลลับ (ห้ามบอกคนแปลกหน้า):</b>
+                        <p class="text-gray-700 text-[11px] leading-relaxed">
+                            เลขประจำตัวประชาชน, เบอร์โทรศัพท์, ที่อยู่บ้าน, รหัสผ่าน (Password), วันเดือนปีเกิด, ชื่อพ่อแม่
+                        </p>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-emerald-200">
+                        <b class="text-emerald-600 block text-xs mb-1">✅ ข้อมูลทั่วไป (บอกผู้อื่นได้):</b>
+                        <p class="text-gray-700 text-[11px] leading-relaxed">
+                            สีที่ชอบ, การ์ตูนที่ชอบ, อาหารที่ชอบ, กีฬาที่ชอบ
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cyber Threats -->
+                <div class="bg-amber-50/80 p-3 rounded-xl border border-amber-200 space-y-1.5 text-xs">
+                    <div class="font-bold text-amber-800 mali-font text-xs md:text-sm flex items-center gap-1 border-b border-amber-200 pb-1">
+                        <span>🛡️</span> 2. การรับมือภัยคุกคามออนไลน์
+                    </div>
+                    <div class="space-y-1 text-gray-700">
+                        <div class="bg-white p-1.5 rounded border border-amber-200">🔑 <b>รหัสผ่าน (Password):</b> ตั้งล็อกหน้าจอ ห้ามบอกเพื่อนเด็ดขาด</div>
+                        <div class="bg-white p-1.5 rounded border border-amber-200">🗣️ <b>โดนชวนไปเที่ยว / ขอข้อมูล:</b> ปฏิเสธทันที แล้วนำเรื่องไป แจ้งพ่อแม่/ครู</div>
+                        <div class="bg-white p-1.5 rounded border border-amber-200">📸 <b>ถูกโพสต์ภาพประจาน:</b> แจ้งพ่อแม่/ครูทันที (ห้ามโพสต์ด่าตอบโต้)</div>
+                        <div class="bg-white p-1.5 rounded border border-amber-200">🚪 <b>เครื่องสาธารณะ:</b> ต้อง Log out (ออกจากระบบ) ทุกครั้ง</div>
+                        <div class="bg-white p-1.5 rounded border border-amber-200">📍 <b>เช็กอิน (Check-in):</b> ไม่ควรเช็กอินตำแหน่งที่อยู่ขณะอยู่บ้านคนเดียว</div>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="bg-indigo-50/80 p-3 rounded-xl border border-indigo-200 space-y-2 text-xs">
+                    <div class="font-bold text-indigo-700 mali-font text-xs md:text-sm flex items-center gap-1 border-b border-indigo-200 pb-1">
+                        <span>🤖</span> 3. ปัญญาประดิษฐ์ (AI) & อัลกอริทึม
+                    </div>
+                    <div class="bg-white p-2.5 rounded-lg border border-indigo-200 space-y-1.5">
+                        <p class="text-gray-800">
+                            <b>AI (Artificial Intelligence):</b> คือ ระบบคอมพิวเตอร์ที่ถูกสร้างให้มีความฉลาด คิด และตัดสินใจได้คล้ายมนุษย์
+                        </p>
+                        <div class="text-[11px] text-gray-600 space-y-1 pt-1.5 border-t border-indigo-100">
+                            <b class="text-indigo-800 block">ตัวอย่าง AI รอบตัวเรา:</b>
+                            <div>• 🗣️ สั่งงานด้วยเสียง: Siri, Google Assistant</div>
+                            <div>• 👁️ สแกนใบหน้าปลดล็อกจอ: Face Recognition</div>
+                            <div>• 🧹 หุ่นยนต์ดูดฝุ่นอัจฉริยะ: เดินเลี่ยงสิ่งกีดขวางเองได้</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
