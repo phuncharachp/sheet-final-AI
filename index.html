@@ -69,17 +69,19 @@
             z-index: 10;
         }
 
-        /* Print Formatting */
+        /* Print Formatting for Mobile & Desktop */
         @media print {
             @page {
                 size: A4 portrait;
-                margin: 6mm;
+                margin: 5mm;
             }
             body {
                 background: white !important;
                 padding: 0 !important;
-                font-size: 9.5pt !important;
+                font-size: 9pt !important;
                 color: black !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
             .no-print { display: none !important; }
             .a4-container {
@@ -93,7 +95,8 @@
                 box-shadow: none !important;
                 border-width: 1.5px !important;
                 page-break-inside: avoid;
-                margin-bottom: 10px !important;
+                break-inside: avoid;
+                margin-bottom: 8px !important;
             }
         }
     </style>
@@ -111,8 +114,8 @@
                     <p class="text-xs text-gray-500">สำหรับอ่านทบทวนติวสอบปลายภาค</p>
                 </div>
             </div>
-            <button onclick="window.print()" class="mali-font bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-5 rounded-full shadow-md transition transform hover:scale-105 flex items-center gap-2 text-xs md:text-sm border-2 border-slate-800">
-                <span>🖨️</span> พิมพ์ชีทสรุป (Print A4)
+            <button onclick="handlePrint()" class="mali-font bg-pink-500 hover:bg-pink-600 text-white font-bold py-2.5 px-5 rounded-full shadow-md transition transform hover:scale-105 active:scale-95 flex items-center gap-2 text-xs md:text-sm border-2 border-slate-800 cursor-pointer">
+                <span>🖨️</span> พิมพ์ / บันทึก PDF (Print/Save PDF)
             </button>
         </div>
 
@@ -412,5 +415,13 @@
 
     </div>
 
+    <!-- Script Handle Print for Mobile & Desktop -->
+    <script>
+        function handlePrint() {
+            setTimeout(() => {
+                window.print();
+            }, 100);
+        }
+    </script>
 </body>
 </html>
